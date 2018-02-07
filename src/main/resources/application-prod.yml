@@ -1,0 +1,11 @@
+server:
+  port: 8082
+  context-path: /demo
+
+paramsA: params_xxx
+
+param_age: 28
+
+girl:
+  cupSize: B
+  age: 20

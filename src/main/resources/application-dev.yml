@@ -1,0 +1,19 @@
+server:
+  port: 8081
+  context-path: /demo
+
+spring:
+  datasource:
+      url: jdbc:mysql://localhost:3306/test
+      username: root
+      password: 1qaz@WSX
+      driver-class-name: com.mysql.jdbc.Driver
+      type: com.alibaba.druid.pool.DruidDataSource
+
+
+paramsA: params_xxx
+param_age: 28
+
+girl:
+  cupSize: A
+  age: 18
