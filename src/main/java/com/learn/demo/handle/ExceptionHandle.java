@@ -3,9 +3,7 @@ package com.learn.demo.handle;
 import com.learn.demo.common.exception.ResultException;
 import com.learn.demo.common.resp.Result;
 import com.learn.demo.common.utils.ResultUtil;
-import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
-import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 
 /**
