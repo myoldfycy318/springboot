@@ -1,6 +1,7 @@
 package com.learn.demo.controller;
 
 
+import com.learn.demo.entity.TestConfig;
 import com.learn.demo.propreties.Girl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -38,5 +39,15 @@ public class HiController {
     @GetMapping("girl")
     public Girl testGirl(){
         return girl;
+    }
+
+
+    @Autowired
+    private TestConfig testConfig;
+
+
+    @GetMapping("/testConfig")
+    public TestConfig testConfig(){
+        return testConfig;
     }
 }

@@ -18,6 +18,12 @@
 
 
 
+    <select id="queryUsers" resultMap="BaseResultMap" >
+        select
+        <include refid="Base_Column_List"/>
+        from t_user
+    </select>
+
     <insert id="insert" parameterType="com.learn.demo.entity.User">
         insert into t_user (id, user_name,
         age)

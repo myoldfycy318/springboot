@@ -26,7 +26,7 @@ public class UserController {
     }
 
     @GetMapping("/findUser")
-    public User findUsers(){
+    public User findUser(){
         return userService.selectById(1);
     }
 
@@ -38,5 +38,13 @@ public class UserController {
         }
         userService.insert(user);
     }
+
+    @GetMapping("/findUsers")
+    public User findUsers(){
+        return userService.selectById(1);
+    }
+
+
+
 
 }
