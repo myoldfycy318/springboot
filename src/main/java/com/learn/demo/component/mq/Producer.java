@@ -29,7 +29,7 @@ public class Producer implements RabbitTemplate.ConfirmCallback {
 
     @Override
     public void confirm(CorrelationData correlationData, boolean ack, String cause) {
-        System.out.println(" 回调id:" + correlationData);
+        System.out.println(" 回调id:" + correlationData+",ack="+ack+", cause="+cause);
         if (ack) {
             System.out.println("消息成功消费");
         } else {

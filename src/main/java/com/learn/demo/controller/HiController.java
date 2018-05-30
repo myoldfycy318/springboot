@@ -9,6 +9,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.*;
 
+import javax.servlet.http.HttpServletRequest;
+
 @RestController
 @RequestMapping("/demo")
 public class HiController {
@@ -25,7 +27,7 @@ public class HiController {
     private Girl girl;
 
     @RequestMapping(value = "/Hi/{id}")
-    public String say() {
+    public String say(HttpServletRequest request) {
         return paramx + param_age;
     }
 

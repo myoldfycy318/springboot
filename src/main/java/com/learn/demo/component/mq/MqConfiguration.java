@@ -94,8 +94,9 @@ public class MqConfiguration {
             public void onMessage(Message message, Channel channel) throws Exception {
                 byte[] body = message.getBody();
                 System.out.println("receive msg : " + new String(body));
+//                throw new Exception("yichang .");
                 //确认消息成功消费
-                channel.basicAck(message.getMessageProperties().getDeliveryTag(), false);
+                channel.basicNack(message.getMessageProperties().getDeliveryTag(), false,false);
             }
         });
         return container;

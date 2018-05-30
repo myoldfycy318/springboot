@@ -4,6 +4,7 @@ import com.learn.demo.entity.User;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
+import java.util.Map;
 
 
 @Repository
@@ -14,4 +15,7 @@ public interface UserMapper {
     User selectById(Integer id);
 
     List<User> queryUsers();
+
+    int saveSendHist(Map<String,String> map);
+
 }

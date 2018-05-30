@@ -37,4 +37,11 @@
         age = #{age,jdbcType=INTEGER}
         where id = #{id,jdbcType=INTEGER}
     </update>
+
+    <!--利用mysql数据的自增，使用Map可以获取自增的字段值 -->
+    <insert id="saveSendHist" parameterType="map"  keyProperty="id" useGeneratedKeys="true">
+        insert into t_user(id) values(#{id})
+    </insert>
+
+
 </mapper>

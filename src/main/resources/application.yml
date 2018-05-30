@@ -4,7 +4,7 @@ spring:
 
   redis:
     host: localhost
-    port: 6379
+    port: 16379
     pool:
       max-active: 8
       max-idle: 8

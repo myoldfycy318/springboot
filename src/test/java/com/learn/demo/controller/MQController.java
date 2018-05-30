@@ -22,7 +22,7 @@ public class MQController {
     public void test1() throws InterruptedException {
         producer.sendMsg("xxx.....");
         System.out.println("----->结束------");
-        Thread.sleep(50000);
+        Thread.sleep(50000*10);
     }
 
     @Autowired
